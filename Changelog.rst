@@ -9,6 +9,13 @@ Under development
 * GH#814: RSA keys for PSS can be imported.
 * GH#810: fixed negation of Ed25519 points
 * Add support for Curve25519 / X25519
+* Add attribute ``curve`` to EccPoint and EccXPoint classes,
+  with the canonical name of the curve.
+* GH#781: the label for the SP800_108_Counter KDF may now
+  contain zero bytes. Thanks to Julien Rische.
+* GH#819: accept an RFC5916 ECPrivateKey even if it doesn't
+  contain any of the optional elements
+  (parameters [0] and publicKey[1]).
 
 3.20.0 (9 January 2024)
 ++++++++++++++++++++++++++
